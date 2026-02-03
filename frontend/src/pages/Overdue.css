@@ -1,0 +1,184 @@
+/* Overdue Page Styles */
+.overdue-page .page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.overdue-count {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.25rem;
+    background: rgba(239, 68, 68, 0.15);
+    border: 1px solid rgba(239, 68, 68, 0.3);
+    border-radius: 12px;
+    color: #ef4444;
+    font-weight: 600;
+}
+
+.overdue-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+    gap: 1.5rem;
+}
+
+.overdue-card {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(239, 68, 68, 0.2);
+    border-radius: 16px;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.overdue-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 30px rgba(239, 68, 68, 0.15);
+}
+
+.overdue-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.25rem;
+}
+
+.days-badge {
+    padding: 0.375rem 0.75rem;
+    background: rgba(239, 68, 68, 0.15);
+    border-radius: 20px;
+    color: #ef4444;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.fine-badge {
+    padding: 0.375rem 0.75rem;
+    background: rgba(245, 158, 11, 0.15);
+    border-radius: 20px;
+    color: #f59e0b;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.overdue-book {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 12px;
+    margin-bottom: 1rem;
+}
+
+.book-icon-large {
+    width: 56px;
+    height: 56px;
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.2) 0%, rgba(118, 75, 162, 0.2) 100%);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #667eea;
+    font-size: 1.5rem;
+}
+
+.book-details h3 {
+    font-size: 1rem;
+    color: #fff;
+    margin-bottom: 0.25rem;
+}
+
+.book-details p {
+    font-size: 0.85rem;
+    color: #64748b;
+    margin-bottom: 0.25rem;
+}
+
+.isbn {
+    font-size: 0.75rem;
+    color: #4a5568;
+    font-family: monospace;
+}
+
+.overdue-member {
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 12px;
+    margin-bottom: 1rem;
+}
+
+.member-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #64748b;
+    font-size: 0.8rem;
+    margin-bottom: 0.75rem;
+}
+
+.member-details h4 {
+    font-size: 0.95rem;
+    color: #fff;
+    margin-bottom: 0.25rem;
+}
+
+.member-id {
+    font-family: monospace;
+    font-size: 0.8rem;
+    color: #667eea;
+    margin-bottom: 0.5rem;
+}
+
+.contact-row {
+    display: flex;
+    align-items: center;
+    margin-top: 0.25rem;
+}
+
+.contact-row span {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.8rem;
+    color: #a0aec0;
+}
+
+.overdue-dates {
+    display: flex;
+    gap: 1rem;
+}
+
+.date-item {
+    flex: 1;
+    padding: 0.75rem;
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.date-label {
+    display: block;
+    font-size: 0.75rem;
+    color: #64748b;
+    margin-bottom: 0.25rem;
+}
+
+.date-value {
+    font-size: 0.9rem;
+    color: #e2e8f0;
+    font-weight: 500;
+}
+
+.date-value.overdue {
+    color: #ef4444;
+}
+
+.empty-icon.success {
+    color: #10b981;
+}
+
+@media (max-width: 400px) {
+    .overdue-grid {
+        grid-template-columns: 1fr;
+    }
+}

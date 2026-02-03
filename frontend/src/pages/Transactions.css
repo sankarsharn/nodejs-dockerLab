@@ -1,0 +1,107 @@
+/* Transactions Page Styles */
+.transactions-page .page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.filter-tabs {
+    display: flex;
+    gap: 0.5rem;
+    background: rgba(255, 255, 255, 0.02);
+    padding: 0.5rem;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.filter-tab {
+    padding: 0.625rem 1.25rem;
+    background: transparent;
+    border: none;
+    border-radius: 8px;
+    color: #a0aec0;
+    font-size: 0.875rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filter-tab:hover {
+    color: #fff;
+}
+
+.filter-tab.active {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #fff;
+}
+
+.member-info-small {
+    display: flex;
+    flex-direction: column;
+}
+
+.member-info-small .member-name {
+    color: #fff;
+    font-weight: 500;
+}
+
+.member-info-small .membership-id {
+    font-size: 0.75rem;
+    font-family: monospace;
+    color: #667eea;
+}
+
+.overdue-text {
+    color: #ef4444 !important;
+    font-weight: 500;
+}
+
+.fine-amount {
+    font-weight: 600;
+}
+
+.fine-amount.unpaid {
+    color: #ef4444;
+}
+
+.fine-amount.paid {
+    color: #10b981;
+}
+
+.btn-return {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: rgba(16, 185, 129, 0.15);
+    border: 1px solid rgba(16, 185, 129, 0.3);
+    border-radius: 8px;
+    color: #10b981;
+    font-size: 0.85rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-return:hover {
+    background: rgba(16, 185, 129, 0.25);
+}
+
+/* Modal Form Icons */
+.modal-form label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .filter-tabs {
+        flex-wrap: wrap;
+    }
+
+    .filter-tab {
+        flex: 1;
+        text-align: center;
+    }
+}

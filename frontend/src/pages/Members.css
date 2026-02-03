@@ -1,0 +1,278 @@
+/* Members Page Styles */
+.members-page .page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.member-info {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.member-avatar {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.member-name {
+    display: block;
+    font-weight: 500;
+    color: #fff;
+}
+
+.member-email {
+    display: block;
+    font-size: 0.8rem;
+    color: #64748b;
+}
+
+.membership-id {
+    font-family: monospace;
+    background: rgba(102, 126, 234, 0.1);
+    padding: 0.25rem 0.5rem;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    color: #667eea;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    font-size: 0.85rem;
+}
+
+.contact-info span {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #a0aec0;
+}
+
+.type-badge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    text-transform: capitalize;
+}
+
+.type-badge.standard {
+    background: rgba(100, 116, 139, 0.15);
+    color: #94a3b8;
+}
+
+.type-badge.premium {
+    background: rgba(245, 158, 11, 0.15);
+    color: #f59e0b;
+}
+
+.books-count {
+    color: #667eea;
+    font-weight: 500;
+}
+
+.status-badge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+}
+
+.status-badge.active {
+    background: rgba(16, 185, 129, 0.15);
+    color: #10b981;
+}
+
+.status-badge.expired {
+    background: rgba(239, 68, 68, 0.15);
+    color: #ef4444;
+}
+
+.btn-icon.view {
+    background: rgba(16, 185, 129, 0.15);
+    color: #10b981;
+}
+
+.btn-icon.view:hover {
+    background: rgba(16, 185, 129, 0.25);
+}
+
+/* Details Modal */
+.details-modal {
+    max-width: 700px;
+}
+
+.member-details {
+    padding: 0.5rem 0;
+}
+
+.detail-card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 16px;
+    margin-bottom: 1.5rem;
+}
+
+.detail-avatar {
+    width: 64px;
+    height: 64px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.detail-info h3 {
+    font-size: 1.25rem;
+    color: #fff;
+    margin-bottom: 0.25rem;
+}
+
+.membership-id-large {
+    font-family: monospace;
+    font-size: 0.9rem;
+    color: #667eea;
+}
+
+.details-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.detail-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 12px;
+}
+
+.detail-label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.8rem;
+    color: #64748b;
+}
+
+.detail-value {
+    font-size: 0.95rem;
+    color: #e2e8f0;
+}
+
+.issued-books-section,
+.history-section {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.issued-books-section h4,
+.history-section h4 {
+    font-size: 1rem;
+    color: #e2e8f0;
+    margin-bottom: 1rem;
+}
+
+.issued-books-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.issued-book-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.75rem;
+    background: rgba(102, 126, 234, 0.1);
+    border-radius: 8px;
+}
+
+.issued-book-item .book-title {
+    color: #fff;
+    font-weight: 500;
+}
+
+.issued-book-item .book-author {
+    color: #64748b;
+    font-size: 0.85rem;
+}
+
+.history-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.history-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem;
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 8px;
+}
+
+.history-book {
+    flex: 1;
+    color: #e2e8f0;
+}
+
+.history-status {
+    font-size: 0.75rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 12px;
+    margin: 0 0.5rem;
+    text-transform: capitalize;
+}
+
+.history-status.issued {
+    background: rgba(245, 158, 11, 0.15);
+    color: #f59e0b;
+}
+
+.history-status.returned {
+    background: rgba(16, 185, 129, 0.15);
+    color: #10b981;
+}
+
+.history-status.overdue {
+    background: rgba(239, 68, 68, 0.15);
+    color: #ef4444;
+}
+
+.history-date {
+    font-size: 0.8rem;
+    color: #64748b;
+}
+
+.no-history {
+    color: #64748b;
+    text-align: center;
+    padding: 1rem;
+}
+
+@media (max-width: 600px) {
+    .details-grid {
+        grid-template-columns: 1fr;
+    }
+}
