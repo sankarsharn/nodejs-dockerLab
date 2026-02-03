@@ -1,5 +1,6 @@
 const { User } = require('../models');
 const { generateToken } = require('../middleware/authMiddleware');
+require('dotenv').config();
 
 // @desc    Register new user
 // @route   POST /api/auth/register
